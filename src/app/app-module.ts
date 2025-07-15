@@ -1,6 +1,5 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { Home } from './components/home/home';
@@ -9,7 +8,7 @@ import { About } from './components/about/about.component';
 import { FormsModule } from '@angular/forms';
 import { ReversePipe } from './pipes/reverse-pipe';
 import { HttpClientModule } from '@angular/common/http';
-import { Users } from './users/users.component';
+import { Users } from './components/users/users.component';
 
 
 @NgModule({

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { StarWarsService } from '../services/star-wars.service';
+import { StarWarsService } from '../../services/star-wars.service';
 
 @Component({
   selector: 'app-users',
