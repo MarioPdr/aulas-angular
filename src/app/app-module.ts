@@ -9,6 +9,10 @@ import { FormsModule } from '@angular/forms';
 import { ReversePipe } from './pipes/reverse-pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { Users } from './components/users/users.component';
+import { Table } from './components/table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatButtonModule } from '@angular/material/button';
+
 
 
 @NgModule({
@@ -17,14 +21,17 @@ import { Users } from './components/users/users.component';
     Home,
     Contact,
     About,
-    Users
+    Users,
+    Table
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReversePipe,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatButtonModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
