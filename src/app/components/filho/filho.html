@@ -1,0 +1,10 @@
+<div> Olá, {{ nome }} </div>
+<button (click)="enviarMensagem()">Enviar Mensagem</button>
+<button (click)="produtoAdicionado.emit({ nome: 'Mouse', preco: 99 })">Adicionar</button>
+
+
+<form (submit)="formEnviado.emit(formulario.value)" #formulario="ngForm">
+    <input type="text" name="nome" ngModel placeholder="Nome do Produto" required>
+    <input type="number" name="preco" ngModel placeholder="Preço do Produto" required>
+    <button type="submit">Enviar Formulário</button>
+</form>

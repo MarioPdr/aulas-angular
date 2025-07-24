@@ -12,7 +12,8 @@ import { Users } from './components/users/users.component';
 import { Table } from './components/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
-
+import { Pai } from './components/pai/pai.component';
+import { Filho } from './components/filho/filho.component';
 
 
 @NgModule({
@@ -22,7 +23,9 @@ import { MatButtonModule } from '@angular/material/button';
     Contact,
     About,
     Users,
-    Table
+    Table,
+    Pai,
+    Filho
   ],
   imports: [
     BrowserModule,
