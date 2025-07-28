@@ -14,7 +14,10 @@ import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
 import { Pai } from './components/pai/pai.component';
 import { Filho } from './components/filho/filho.component';
-
+import { HomeComponent } from './components/home-component/home.component';
+import { SobreComponent } from './components/sobre-component/sobre.component';
+import { Listausuarios } from './components/listausuarios/listausuarios.component';
+import { Usuariosdetalhes } from './components/usuariodetalhes/usuariosdetalhes.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,11 @@ import { Filho } from './components/filho/filho.component';
     Users,
     Table,
     Pai,
-    Filho
+    Filho,
+    HomeComponent,
+    SobreComponent,
+    Listausuarios,
+    Usuariosdetalhes,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +41,8 @@ import { Filho } from './components/filho/filho.component';
     ReversePipe,
     HttpClientModule,
     MatTableModule,
-    MatButtonModule
+    MatButtonModule,
+    
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
@@ -42,3 +50,4 @@ import { Filho } from './components/filho/filho.component';
   bootstrap: [App]
 })
 export class AppModule { }
+
