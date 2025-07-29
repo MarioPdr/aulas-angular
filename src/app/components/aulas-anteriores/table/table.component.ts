@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { JsonplaceholderService } from '../../services/jsonplaceholder.service';
+import { JsonplaceholderService } from '../../../services/aulas-anteriores/jsonplaceholder.service';
 
 @Component({
   selector: 'app-table',

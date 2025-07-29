@@ -1,38 +1,37 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { Home } from './components/home/home';
-import { Contact } from './components/contact/contact.component';
-import { About } from './components/about/about.component';
+import { Home } from './components/aulas-anteriores/home/home';
+import { Contact } from './components/aulas-anteriores/contact/contact.component';
 import { FormsModule } from '@angular/forms';
 import { ReversePipe } from './pipes/reverse-pipe';
 import { HttpClientModule } from '@angular/common/http';
-import { Users } from './components/users/users.component';
-import { Table } from './components/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatButtonModule } from '@angular/material/button';
-import { Pai } from './components/pai/pai.component';
-import { Filho } from './components/filho/filho.component';
-import { HomeComponent } from './components/home-component/home.component';
-import { SobreComponent } from './components/sobre-component/sobre.component';
+import { Pai } from './components/aulas-anteriores/pai/pai.component';
+import { Filho } from './components/aulas-anteriores/filho/filho.component';
+import { HomeComponent } from './components/aulas-anteriores/home-component/home.component';
+import { SobreComponent } from './components/aulas-anteriores/sobre-component/sobre.component';
 import { Listausuarios } from './components/listausuarios/listausuarios.component';
 import { Usuariosdetalhes } from './components/usuariodetalhes/usuariosdetalhes.component';
+import { Formulario } from './components/formulario/formulario.component';
+import { Table } from './components/aulas-anteriores/table/table.component';
 
 @NgModule({
   declarations: [
     App,
     Home,
     Contact,
-    About,
-    Users,
-    Table,
     Pai,
     Filho,
     HomeComponent,
     SobreComponent,
     Listausuarios,
     Usuariosdetalhes,
+    Formulario,
+    Table
   ],
   imports: [
     BrowserModule,
@@ -42,7 +41,7 @@ import { Usuariosdetalhes } from './components/usuariodetalhes/usuariosdetalhes.
     HttpClientModule,
     MatTableModule,
     MatButtonModule,
-    
+    ReactiveFormsModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
