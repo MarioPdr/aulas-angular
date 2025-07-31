@@ -18,6 +18,7 @@ import { Listausuarios } from './components/listausuarios/listausuarios.componen
 import { Usuariosdetalhes } from './components/usuariodetalhes/usuariosdetalhes.component';
 import { Formulario } from './components/formulario/formulario.component';
 import { Table } from './components/aulas-anteriores/table/table.component';
+import { Templateform } from './components/templateform/templateform.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { Table } from './components/aulas-anteriores/table/table.component';
     Listausuarios,
     Usuariosdetalhes,
     Formulario,
-    Table
+    Table,
+    Templateform
   ],
   imports: [
     BrowserModule,
