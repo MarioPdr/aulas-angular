@@ -5,13 +5,15 @@ import { Formulario } from './components/formulario/formulario.component';
 import { Templateform } from './components/templateform/templateform.component';
 import { Listausuarios } from './components/listausuarios/listausuarios.component';
 import { HomeComponent } from './components/aulas-anteriores/home-component/home.component';
+import { CadastroFuncionario } from './components/cadastro-funcionario/cadastro-funcionario.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'usuarios', component: Listausuarios },
   { path: 'usuariodetalhe/:id', component: Usuariosdetalhes },
   { path: 'formulario', component: Formulario },
-  { path: 'tempform', component: Templateform}
+  { path: 'tempform', component: Templateform},
+  { path: 'cadastrofuncionario', component: CadastroFuncionario }
 ];
 
 @NgModule({

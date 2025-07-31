@@ -19,6 +19,7 @@ import { Usuariosdetalhes } from './components/usuariodetalhes/usuariosdetalhes.
 import { Formulario } from './components/formulario/formulario.component';
 import { Table } from './components/aulas-anteriores/table/table.component';
 import { Templateform } from './components/templateform/templateform.component';
+import { CadastroFuncionario } from './components/cadastro-funcionario/cadastro-funcionario.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { Templateform } from './components/templateform/templateform.component';
     Usuariosdetalhes,
     Formulario,
     Table,
-    Templateform
+    Templateform,
+    CadastroFuncionario
   ],
   imports: [
     BrowserModule,
